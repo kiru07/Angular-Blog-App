@@ -1,0 +1,18 @@
+<div class="blog-card">
+    <h5 class="blog-title">
+        {{ blog.title }}
+    </h5>
+    <span>{{ blog.date | date }}</span>
+    <div class="blog-cover-image">
+        <img src="{{ blog.imgUrl }}" alt="blog image">
+    </div>
+    <p class="blog-desc">
+        {{ blog.description }}
+    </p>
+    <div class="divider"></div>
+    <div class="bottom-bar">
+        <button class="blog-delete-button" type="button" (click)="onDelete();$event.stopPropagation()"> <i
+                class="fas fa-trash-alt"></i></button>
+        <app-star-rating [blog]="blog" [rating]="blog.starRating"></app-star-rating>
+    </div>
+</div>

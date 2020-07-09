@@ -1,0 +1,21 @@
+<div class="container write-post d-flex justify-content-end">
+    <button type="button" class="btn btn-outline-dark" routerLink="/">Home</button>
+    <button type="button" class="btn btn-outline-dark ml-2" routerLink="/edit-blog/{{ currentBlog?.id }}">Edit
+        Blog</button>
+</div>
+<div class="container">
+    <div class="top-header d-flex justify-content-center m-2">
+        <h1>{{ currentBlog?.title }}</h1>
+    </div>
+    <div class="div d-flex justify-content-end m-2">
+
+        <span>{{ currentBlog?.date | date }}</span>
+    </div>
+    <div class="image-container d-flex justify-content-center align-items-center mb-5">
+        <img [src]="currentBlog?.imgUrl" alt="blog-cover">
+    </div>
+    <div class="desc-container">
+        <p>{{ currentBlog?.description }}</p>
+
+    </div>
+</div>

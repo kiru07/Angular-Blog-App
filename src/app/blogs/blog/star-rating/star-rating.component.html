@@ -1,0 +1,4 @@
+<div class="star-rating">
+    <i *ngFor="let i of [].constructor(totalRating), let x = index" class="fa-star" [class.far]="x >= rating"
+        [class.fas]="x < rating" (click)="onClick(x); $event.stopPropagation()">{{ class }}</i>
+</div>
