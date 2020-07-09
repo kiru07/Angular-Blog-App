@@ -1,0 +1,9 @@
+<div class="container write-post d-flex justify-content-end">
+    <button class="btn btn-outline-dark" type="button">
+        Write a blog
+    </button>
+</div>
+<div class="blog-post">
+    <!--Using Angular *ngFor directive to loop through each Blog in blogs array, and render a BlogComponent for each one-->
+    <app-blog *ngFor="let blog of blogs" [blog]="blog"></app-blog>
+</div>

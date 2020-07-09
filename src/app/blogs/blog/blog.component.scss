@@ -1,0 +1,51 @@
+.blog-card {
+    display: inline-block;
+    width: 400px;
+    height: 440px;
+    cursor: pointer;
+    padding: 8px;
+    box-shadow: 2px 0px 13px 7px rgba($color: #000000, $alpha: 0.2);
+    margin: 40px;
+
+    img {
+        width: 384px;
+    }
+
+    span {
+        color: grey;
+    }
+
+    p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+
+    .bottom-bar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #D2D2D2;
+        border-radius: 4px;
+        background: none;
+        padding: 3px;
+    }
+
+    button:hover {        
+        border: none;
+        box-shadow: 2px 0px 13px 7px rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .divider {
+        height: 5px;
+        background-color: #eee;
+        border-radius: 4px;
+        margin: 0px 0px 10px;
+    }
+}
