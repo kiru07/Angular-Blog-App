@@ -1,0 +1,24 @@
+.blog-card {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    padding: 8px;
+    box-shadow: 2px 0px 13px 7px rgba($color: #000000, $alpha: 0.2);
+    margin: 40px;
+
+    img {
+        width: 384px;
+    }
+
+    span {
+        color: grey;
+    }
+
+    p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+}
