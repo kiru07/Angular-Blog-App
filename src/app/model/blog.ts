@@ -3,5 +3,6 @@ export interface Blog {
     title: string,
     date: Date,
     imgUrl: string,
-    description: string
+    description: string,
+    starRating: number
 }

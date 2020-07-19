@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Blog } from '../../model/blog';
+import { BlogService } from '../../service/blog.service';
 
 @Component({
   selector: 'app-blog',
@@ -10,10 +11,13 @@ export class BlogComponent implements OnInit {
 
   @Input() blog: Blog;
 
-  constructor() { }
+  constructor(private blogsService: BlogService) { }
 
   ngOnInit(): void {
   }
 
+  onDelete() {
+    this.blogsService.deleteBlog(this.blog);
+  }
 
 }

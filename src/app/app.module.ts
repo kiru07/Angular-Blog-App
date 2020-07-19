@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { BlogComponent } from './blogs/blog/blog.component';
 import { HeaderComponent } from './common/header/header.component';
+import { StarRatingComponent } from './blogs/blog/star-rating/star-rating.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogsComponent,
     BlogComponent,
-    HeaderComponent
+    HeaderComponent,
+    StarRatingComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,4 +9,9 @@
     <p class="blog-desc">
         {{ blog.description }}
     </p>
+    <div class="divider"></div>
+    <div class="bottom-bar">
+        <button class="blog-delete-button" type="button" (click)="onDelete()"> <i class="fas fa-trash-alt"></i></button>
+        <app-star-rating [rating]="blog.starRating"></app-star-rating>
+    </div>
 </div>
