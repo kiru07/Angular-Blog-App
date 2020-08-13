@@ -10,7 +10,7 @@ export class BlogsComponent implements OnInit {
 
   blogs = null;
 
-  constructor(private blogsService: BlogService) { }
+  constructor(public blogsService: BlogService) { }
 
   ngOnInit(): void {
     this.blogs = this.blogsService.blogs;
