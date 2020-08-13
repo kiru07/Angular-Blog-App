@@ -8,6 +8,7 @@ import { BlogComponent } from './blogs/blog/blog.component';
 import { HeaderComponent } from './common/header/header.component';
 import { StarRatingComponent } from './blogs/blog/star-rating/star-rating.component';
 
+import { CreateBlogComponent } from './create-blog/create-blog.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,8 @@ import { StarRatingComponent } from './blogs/blog/star-rating/star-rating.compon
     BlogComponent,
     HeaderComponent,
     StarRatingComponent,
+    BlogsComponent,
+    CreateBlogComponent
   ],
   imports: [
     BrowserModule,
