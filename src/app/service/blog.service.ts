@@ -52,6 +52,4 @@ export class BlogService {
     this.blogs.push(blog);
     console.log(this.blogs);
   }
-
-  // TODO: Update Blog (ie: edit blog) - include update star rating value as well
 }

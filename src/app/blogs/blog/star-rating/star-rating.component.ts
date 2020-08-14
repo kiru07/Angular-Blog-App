@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Blog } from 'src/app/model/blog';
 
 @Component({
   selector: 'app-star-rating',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./star-rating.component.scss']
 })
 export class StarRatingComponent implements OnInit {
-
+  @Input() blog: Blog;
   @Input() rating: number;
   totalRating = 5;
 
@@ -21,6 +22,8 @@ export class StarRatingComponent implements OnInit {
     } else {
       this.rating = index + 1;
     }
+    // Update the starRating property of blog
+    this.blog.starRating = this.rating;
   }
 
 }

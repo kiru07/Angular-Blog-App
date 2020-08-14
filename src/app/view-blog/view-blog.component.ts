@@ -28,4 +28,5 @@ export class ViewBlogComponent implements OnInit {
     this.currentBlog = this.blogService.getBlog(id);
     console.log(this.currentBlog);
   }
+
 }

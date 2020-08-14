@@ -1,3 +1,9 @@
+<div class="container write-post d-flex justify-content-end">
+    <button type="button" class="btn btn-outline-dark" routerLink="/">Home</button>
+    <!--TODO: Can't pass blog to CreateBlog component like this - ie: can't pass using button element-->
+    <button type="button" class="btn btn-outline-dark ml-2" routerLink="/edit-blog/{{ currentBlog.id }}">Edit
+        Blog</button>
+</div>
 <div class="container">
     <div class="top-header d-flex justify-content-center m-2">
         <h1>{{ currentBlog.title }}</h1>

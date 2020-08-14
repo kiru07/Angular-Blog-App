@@ -13,6 +13,6 @@
     <div class="bottom-bar">
         <button class="blog-delete-button" type="button" (click)="onDelete();$event.stopPropagation()"> <i
                 class="fas fa-trash-alt"></i></button>
-        <app-star-rating [rating]="blog.starRating"></app-star-rating>
+        <app-star-rating [blog]="blog" [rating]="blog.starRating"></app-star-rating>
     </div>
 </div>
