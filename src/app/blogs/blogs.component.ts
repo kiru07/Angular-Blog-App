@@ -19,9 +19,14 @@ export class BlogsComponent implements OnInit {
     this.blogs = this.blogsService.blogs;
   }
 
-  // Navigate to ViewBlog component when this blog is clicked using Router service
+  // Navigate to ViewBlog component when the blog card is clicked
   onClickBlog(id: number) {
     this.router.navigate(['view-blog', id]);
+  }
+
+  // Navigate to CreateBlog component when the button is clicked
+  onClickCreate() {
+    this.router.navigate(['create-blog']);
   }
 
 }

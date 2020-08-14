@@ -47,4 +47,11 @@ export class BlogService {
   getBlog(id: number): Blog {
     return this.blogs.find(blog => blog.id === id);
   }
+
+  addBlog(blog: Blog) {
+    this.blogs.push(blog);
+    console.log(this.blogs);
+  }
+
+  // TODO: Update Blog (ie: edit blog) - include update star rating value as well
 }
