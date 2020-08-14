@@ -25,8 +25,17 @@ export class ViewBlogComponent implements OnInit {
     // Get blog id from route parameter
     const id = +this.route.snapshot.paramMap.get('id');
     // Find blog with id using blog service
-    this.currentBlog = this.blogService.getBlog(id);
-    console.log(this.currentBlog);
+    if (!this.blogService.getBlog(id)) {
+      this.blogService.getBlogs().subscribe(blogs => {
+        this.blogService.blogs = blogs;
+        this.currentBlog = this.blogService.getBlog(id);
+      });
+    } else {
+      console.log('else');
+      this.currentBlog = this.blogService.getBlog(id);
+    }
+
+    // console.log(this.currentBlog);
   }
 
 }

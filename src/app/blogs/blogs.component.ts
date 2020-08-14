@@ -9,14 +9,14 @@ import { Router } from '@angular/router';
 })
 export class BlogsComponent implements OnInit {
 
-  blogs = null;
+  // blogs = null;
 
   constructor(
     public blogsService: BlogService,
     private router: Router) { }
 
   ngOnInit(): void {
-    this.blogs = this.blogsService.blogs;
+    // this.blogs = this.blogsService.blogs;
   }
 
   // Navigate to ViewBlog component when the blog card is clicked

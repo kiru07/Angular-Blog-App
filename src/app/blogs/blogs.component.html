@@ -6,7 +6,8 @@
 <div class="blog-post">
     <ng-container *ngIf="blogsService.blogs.length > 0; else emptyBlogs">
         <!--Using Angular *ngFor directive to loop through each Blog in blogs array, and render a BlogComponent for each one-->
-        <app-blog *ngFor="let blog of blogs" [blog]="blog" (click)="onClickBlog(blog.id)"></app-blog>
+        <!-- <app-blog *ngFor="let blog of blogs" [blog]="blog" (click)="onClickBlog(blog.id)"></app-blog> -->
+        <app-blog *ngFor="let blog of blogsService.blogs" [blog]="blog" (click)="onClickBlog(blog.id)"></app-blog>
     </ng-container>
     <ng-template #emptyBlogs>
         <div class="empty-blogs">
