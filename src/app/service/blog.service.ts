@@ -43,4 +43,8 @@ export class BlogService {
       this.blogs.splice(index, 1);
     }
   }
+
+  getBlog(id: number): Blog {
+    return this.blogs.find(blog => blog.id === id);
+  }
 }
